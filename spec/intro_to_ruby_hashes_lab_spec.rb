@@ -91,7 +91,7 @@ describe "updating data in a hash" do
       :apples => 3
     }
     update_hash[:apples]
-    update_hash[:apples] = 4
+    update_hash[:apples] = 
     
     if update_hash[:oranges]
       update_hash[:oranges] += 1
