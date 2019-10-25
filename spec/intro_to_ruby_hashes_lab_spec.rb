@@ -15,6 +15,7 @@ describe "working with hashes" do
       my_hash = {
         :name => "Ascension:, " :type => "Boardgame"
       }
+      
       it "creates and returns a valid hash that contains key/value pairs of your choice" do
         expect(my_hash).to be_a(Hash)
         expect(my_hash.keys.count).to_not eq(0)
@@ -25,6 +26,7 @@ describe "working with hashes" do
       pioneer = {
         :name => "Grace Hopper"
       }
+      
       it "creates and returns a hash named pioneer whose key is a symbol :name and whose value is a string, 'Grace Hopper'" do
         expect(pioneer).to be_a(Hash)
         expect(pioneer[:name]).to eq("Grace Hopper")
@@ -35,6 +37,7 @@ describe "working with hashes" do
       id_generator = {
         :id => 1
       }
+      
       it "creates and returns a hash with a key :id and a random number assigned to the value" do
         expect(id_generator).to be_a Hash
         expect(id_generator[:id]).to be_an Integer
@@ -47,6 +50,7 @@ describe "working with hashes" do
         :name => "Grace Hopper"
       }
       my_hash_creator[:name]
+      
       it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
         expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
         expect(my_hash_creator(:name, 'Grace Hopper')).to eq({name: 'Grace Hopper'})
@@ -58,6 +62,7 @@ describe "working with hashes" do
 end
 
 describe "reading data from a hash" do
+  
   describe "read_from_hash" do
     it "returns the value corresponding to the provided key" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
