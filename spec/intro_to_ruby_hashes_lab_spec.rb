@@ -33,7 +33,7 @@ describe "working with hashes" do
 
     describe "id_generator" do
       id_generator = {
-        :id => ""
+        :id => "Quinn"
       }
       it "creates and returns a hash with a key :id and a random number assigned to the value" do
         expect(id_generator).to be_a Hash
