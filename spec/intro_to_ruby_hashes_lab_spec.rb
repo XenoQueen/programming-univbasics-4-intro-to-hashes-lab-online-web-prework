@@ -69,7 +69,7 @@ describe "reading data from a hash" do
     }
     read_from_hash[dog]
     
-    
+    if 
     
     it "returns the value corresponding to the provided key" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
