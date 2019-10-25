@@ -70,7 +70,10 @@ describe "reading data from a hash" do
     read_from_hash[:dog]
     
     if read_from_hash[:dog]
-    
+      puts "My favorite dog breed!"
+    else
+      puts "I find your lack of corgis disturbing."
+    end
     it "returns the value corresponding to the provided key" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
       expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
