@@ -96,7 +96,7 @@ describe "updating data in a hash" do
     if update_hash[:oranges]
       update_hash[:oranges] += 1
     else
-      puts "Fruit not found!"
+      
     end
     
     it "accepts a hash and key as parameters" do
