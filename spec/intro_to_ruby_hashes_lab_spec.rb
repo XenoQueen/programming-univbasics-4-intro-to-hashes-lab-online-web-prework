@@ -90,6 +90,8 @@ describe "updating data in a hash" do
     update_counting_hash = {
       :apples => 3
     }
+    update_counting_hash[:apples]
+    update_counting_hash[:apples]
     it "accepts a hash and key as parameters" do
       expect{ update_counting_hash({},'hello') }.to_not raise_error
     end
