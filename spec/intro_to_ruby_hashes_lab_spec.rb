@@ -93,7 +93,7 @@ describe "updating data in a hash" do
     update_hash[:apples]
     update_hash[:apples] = 4
     
-    update_hash[]
+    if update_hash[:oranges]
     
     it "accepts a hash and key as parameters" do
       expect{ update_counting_hash({},'hello') }.to_not raise_error
