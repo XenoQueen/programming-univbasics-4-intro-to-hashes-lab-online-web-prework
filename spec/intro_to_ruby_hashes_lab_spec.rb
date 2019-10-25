@@ -10,7 +10,7 @@ describe "working with hashes" do
       end
     end
 
-
+new_hash = Hash.new
 
     describe "my_hash" do
       it "creates and returns a valid hash that contains key/value pairs of your choice" do
