@@ -96,7 +96,7 @@ describe "updating data in a hash" do
     if update_hash[:oranges]
       update_hash[:oranges] += 1
     else
-      
+      update_hash[:oranges] = 1
     end
     
     it "accepts a hash and key as parameters" do
