@@ -67,9 +67,9 @@ describe "reading data from a hash" do
     read_from_hash = {
       :dog => "Corgi", :cat => "Siamese"
     }
-    read_from_hash[dog]
+    read_from_hash[:dog]
     
-    if 
+    if read_from_hash[:dog]
     
     it "returns the value corresponding to the provided key" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
