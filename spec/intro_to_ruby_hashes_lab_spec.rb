@@ -87,6 +87,9 @@ end
 
 describe "updating data in a hash" do
   describe "update_counting_hash" do
+    update_counting_hash = {
+      :apples => 3
+    }
     it "accepts a hash and key as parameters" do
       expect{ update_counting_hash({},'hello') }.to_not raise_error
     end
