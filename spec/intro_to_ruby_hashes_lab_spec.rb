@@ -44,7 +44,7 @@ describe "working with hashes" do
 
     describe "my_hash_creator" do
       my_hash_creator = {
-        :name => "Grace Hopper", 
+        :name => "Grace Hopper"
       }
       it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
         expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
